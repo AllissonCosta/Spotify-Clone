@@ -1,41 +1,122 @@
+/* Global */
+
+/* Utilizando variáveis para cores */
+:root {
+    --cor-principal-preto: #000000;
+    --cor-principal-branco: #ffffff;
+    
+    --cor-background-verde-claro: #96f0b6;
+
+    --cor-segundaria-verde-claro: #1ed760;
+    --cor-segundaria-azul-forte: #202f72;
+}
+
+/* Configuração Global */
 * {
     margin: 0;
     padding: 0;
 }
+
+
+/* Configuração De todo o conteudo */
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+/* --------------------------------- */
+/* Menu */
 
+/* Configuração do cabeçalho */
 header {
     display: flex;
-    background: black;
-    color: white;
+    background: var(--cor-principal-preto);
+    color: var(--cor-principal-branco);
     justify-content: space-between;
     padding: 16px 103px;
 }
+/* configuração da logo */
 div#logo {
-    margin-top: 5px;
+     margin-top: 5px; /* colocando uma margem do topo na logo */
 }
+/* configuração geral da lista */
 nav ul{
     display: flex;
-    margin-top: 15px;
-    
+    margin-top: 15px; /* colocando uma margem do topo nos links de navegação */ 
 }
+/* configuração dos itens da lista */
 nav li {
-    list-style-type: none;
-    margin-left: 30px;
+    list-style-type: none; /* tirando as marcações de lista */
+    margin-left: 30px; /* espaço entre os links de navegação*/
     font-size: 17px;
     font-weight: bold;
-    
 }
+/* configuração dos links de navegação dentro do menu de navegação */
 nav a {
-    color: white;
-    text-decoration: none;  
-    
+    color: var(--cor-principal-branco);
+    text-decoration: none;  /* tirando os sublinhados dos links de navegação*/  
 }
+/* animação dos links de navegação */
 nav a:hover {
-    color: #1ed760;
+    color: var(--cor-segundaria-verde-claro);
 }
+/* configuração da barra [ | ] que está no menu de navegação */
 nav p {
+    font-size: .9em; /* botando um tamanho diferente separado do resto dos links de navegação */
+}
+/* --------------------------------- */
+/* Conteúdo */
+main {
+    font-family: Helvetica, sans-serif;
+}
+.conteudo {
+    display: flex;
+    color: var(--cor-segundaria-azul-forte);
+    padding: 10vh 15vh;
+    justify-content: space-between;
+}
+.cordefundo_verde {
+    background: var(--cor-background-verde-claro);
+}
+.conteudo_esquerdo {
+    width: 70vw;
+}
+.conteudo_esquerdo p, h1, h2, h3 {
+    margin: 30px 0;
+}
+.conteudo_esquerdo p {
+    font-weight: 600;
     font-size: .9em;
+}
+.conteudo_esquerdo h1 {
+    font-size: 3.5em;
+    font-weight: 800;  
+}
+.conteudo_esquerdo h2 {
+    font-weight: normal;
+    width: 45vw;
+}
+.conteudo_esquerdo h3 {
+    font-size: .8em;
+    font-weight: normal;
+    width: 50vw;
+}
+.conteudo_esquerdo h3 a {
+    color: var(--cor-segundaria-azul-forte);
+}
+
+#linkcadastro {
+    padding: 17px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: .9em;
+    cursor: pointer;
+    background: var(--cor-segundaria-azul-forte);
+    color: var(--cor-background-verde-claro);
+}
+#linkcadastro:hover {
+    transform: scale(1.1);
+}
+
+#img {
+    margin-top: 30px;
 }
