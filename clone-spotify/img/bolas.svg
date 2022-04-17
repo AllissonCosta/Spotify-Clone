@@ -1,13 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440" height="607" viewBox="0 0 1440 607" fill="none" xmlns="http://www.w3.org/2000/svg">
-<ellipse cx="1656" cy="226" rx="338" ry="335" fill="#1ED760"/>
-<circle cx="973" cy="896.41" r="475" fill="#1ED760"/>
-<circle cx="952" cy="404.41" r="140" fill="#1ED760"/>
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="498" y="421" width="950" height="951">
-<circle cx="973" cy="896.41" r="475" fill="#19E68C"/>
-</mask>
-<g mask="url(#mask0)">
-<circle cx="952" cy="404.41" r="140" fill="#2D46B9"/>
-</g>
-<circle cx="744" cy="-9.58984" r="68" fill="#1ED760"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 845 610.51"><defs><style>.cls-1{fill:#1ed760;}.cls-2{fill:#2d46b9;}.cls-3{fill:none;}</style></defs><g id="Camada_2" data-name="Camada 2"><path class="cls-1" d="M1541.5,738.5h-757c49.42-70.79,127-130.88,222.75-163,16.38,47.1,65.51,97,133.25,97,75.84,0,124.77-63.46,136.41-108.45C1392,591.84,1486,659.39,1541.5,738.5Z" transform="translate(-784.5 -127.99)"/><path class="cls-1" d="M1277,563.76a.11.11,0,0,1,0,0,2.17,2.17,0,0,1-.07.24,487.58,487.58,0,0,0-110.16-13.53h-.57c-1.22,0-2.45,0-3.68,0a487.46,487.46,0,0,0-155.25,25c0-.13-.1-.26-.14-.39a118.53,118.53,0,0,1-6.61-42.63c2.37-58.22,52.65-140,140-140,87.86,0,137.93,82.78,140,140A108.74,108.74,0,0,1,1277,563.76Z" transform="translate(-784.5 -127.99)"/><path class="cls-2" d="M1276.91,564.05c-11.64,45-60.57,108.42-136.41,108.45-67.74,0-116.87-49.88-133.25-97a487.46,487.46,0,0,1,155.25-25c1.23,0,2.46,0,3.68,0h.57A487.58,487.58,0,0,1,1276.91,564.05Z" transform="translate(-784.5 -127.99)"/><path class="cls-3" d="M1166.18,550.52c-59,0-112.88,10.76-158.68,25" transform="translate(-784.5 -127.99)"/><path class="cls-3" d="M1166.75,550.52a473.65,473.65,0,0,1,80.75,7c9.94,1.73,19.61,3.75,29,6" transform="translate(-784.5 -127.99)"/></g><g id="Camada_3" data-name="Camada 3"><path class="cls-1" d="M1629.5,128V610.5c-67-51-122-144.85-122-256,0-92.06,38-170,88-226Z" transform="translate(-784.5 -127.99)"/></g><g id="Camada_4" data-name="Camada 4"><path class="cls-1" d="M1000.5,128.5C997.5,162,970.73,186,934,186s-64.5-24-66.5-57.5Z" transform="translate(-784.5 -127.99)"/></g></svg>
