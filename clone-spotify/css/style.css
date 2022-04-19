@@ -2,14 +2,13 @@
 
 /* Utilizando variáveis para cores */
 :root {
-    --cor-principal-preto: #000000;
-    --cor-principal-branco: #ffffff;
+    --cor-base-um: #000000;
+    --cor-base-dois: #ffffff;
+
+    --cor-principal-um: #1ed760;
     
     --cor-background-parteDeCima: #993399;
-    --cor-background-parteDeBaixo: #2941AB;
-
-    --cor-segundaria-verde-claro: #1ed760;
-    --cor-segundaria-azul-forte: #FFFFFF;
+    --cor-background-parteDeBaixo: #2941AB;    
 }
 
 /* Configuração Global */
@@ -29,8 +28,8 @@ body {
 /* Configuração do cabeçalho */
 header {
     display: flex;
-    background: var(--cor-principal-preto);
-    color: var(--cor-principal-branco);
+    background: var(--cor-base-um);
+    color: var(--cor-base-dois);
     justify-content: space-between;
     padding: 16px 103px;
 }
@@ -52,12 +51,12 @@ nav li {
 }
 /* configuração dos links de navegação dentro do menu de navegação */
 nav a {
-    color: var(--cor-principal-branco);
+    color: var(--cor-base-dois);
     text-decoration: none;  /* tirando os sublinhados dos links de navegação*/  
 }
 /* animação dos links de navegação */
 nav a:hover {
-    color: var(--cor-segundaria-verde-claro);
+    color: var(--cor-principal-um);
 }
 /* configuração da barra [ | ] que está no menu de navegação */
 nav p {
@@ -70,7 +69,7 @@ main {
 }
 .conteudo {
     display: flex;
-    color: var(--cor-segundaria-azul-forte);
+    color: var(--cor-base-dois);
     justify-content: space-between;
 }
 .conteudo_parteDeCima {
@@ -108,7 +107,7 @@ main {
     width: 50vw;
 }
 .conteudo_esquerdo h3 a {
-    color: var(--cor-segundaria-azul-forte);
+    color: var(--cor-base-dois);
 }
 
 .linkcadastro {
@@ -124,8 +123,8 @@ main {
 }
 
 .linkcadastro_cor_parteDeCima {
-    background: var(--cor-principal-preto);
-    color: var(--cor-segundaria-azul-forte);
+    background: var(--cor-base-um);
+    color: var(--cor-base-dois);
 }
 
 .img_parteDeCima {
@@ -142,11 +141,11 @@ main {
 }
 
 .conteudo_esquerdo_parteDeBaixo {
-    color: var(--cor-segundaria-verde-claro);
+    color: var(--cor-principal-um);
     padding: 8vh 0vh 5vh 12vh;
 }
 .linkcadastro_cor_parteDeBaixo {
-    background: var(--cor-segundaria-verde-claro);
+    background: var(--cor-principal-um);
     color: var(--cor-background-parteDeBaixo);
 }
 
@@ -158,24 +157,102 @@ main {
 }
 
 /* ------------------------------------------------------------------ */
-
-.rodape {
-    display: flex;
-    justify-content: space-between;
-    background: var(--cor-principal-preto);
-    color: var(--cor-principal-branco);
-    padding: 70px;
+.footer {
+    background: var(--cor-base-um);
+    color: var(--cor-base-dois);
 }
+.footer li {
+    list-style: none;
+}
+.footer a {
+    text-decoration: none;
+    color: var(--cor-base-dois);    
+}
+
+
+.rodape_parteDeCima {
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 70px 100px;
+}
+
 .links {
-    display: flex;   
+    display: flex;
+    margin: 0 130px 0 50px; 
 }
 .links ul {
-    padding: 0 35px; 
+    padding: 0 30px; 
 }
-.rodape a {
-    text-decoration: none;
-    color: var(--cor-principal-branco);    
+.links h3 {
+    font-size: 12px;
+    color: #919496;
+    margin-top: 0;
+    margin-bottom: 17px;
 }
-.rodape li {
-    list-style: none;
+.links a:hover {
+    color: var(--cor-principal-um);
+}
+.links h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;    
+}
+
+.redessociais ul {
+    display: flex;  
+    justify-content: space-between;
+}
+
+.redessociais li { /* Configuração da borda das logos "redes sociais" */
+    margin-left: 15px; /* Espaço entre as logos das redes sociais */
+    padding: 15px 15px 10px 15px; /* Tamanho do circulo das logos das redes sociais*/
+    border-radius: 50%;
+    background: #222326;            
+}
+.redessociais img {
+    background-color: var(--cor-base-dois);
+}
+.redessociais img:hover {
+    background-color: var(--cor-principal-um);
+}
+
+
+
+.linkbrasil {
+    text-align: right;
+    margin-right: 132px;
+    color: blue;
+    font-size: 12px;
+    margin-bottom: 11px;
+}
+.linkbrasil a:hover {
+    color: var(--cor-principal-um);
+}
+.linkbrasil a::before {
+    content: '🌎 ';
+}
+
+
+
+.rodape_parteDeBaixo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-bottom: 70px;
+}
+.links_separacao ul {
+    display: flex;
+    padding-right: 10px;
+}
+.links_separacao li {
+    padding-right: 15px;
+    color: ;
+}
+.links_separacao a {
+    color: #919496;
+}
+
+
+.linksdois p::before {
+    content: '©️ ';
 }
