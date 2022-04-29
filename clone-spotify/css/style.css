@@ -78,9 +78,7 @@ main {
 .cordefundo_parteDeCima {
     background: var(--cor-background-parteDeCima);
 }
-/* .conteudo_esquerdo {
-    width: 50vw;
-} */
+
 .conteudo_esquerdo_parteDeCima p, h1, h2, h3 {
     margin: 35px 0;
 }
@@ -149,11 +147,15 @@ main {
     color: var(--cor-background-parteDeBaixo);
 }
 
-
+.conteudo_direito_parteDeBaixo {
+    background-image: url('../img/bolas.svg');
+    background-repeat: no-repeat;   
+    padding: 450px;
+}
 .img_parteDeBaixo {
     margin-left: -840px;
     margin-top: -.5px;
-    margin-bottom: -3.8px;
+    margin-bottom: -250px;
 }
 
 /* ------------------------------------------------------------------ */
@@ -254,4 +256,44 @@ main {
 
 .linksdois p::before {
     content: '©️ ';
+}
+
+
+/* ------------------------- MEDIA QUERIES ------------------------- */
+
+@media (max-width: 1230px) {
+    .conteudo {
+        display: block;        
+    }
+    .conteudo_esquerdo_parteDeCima p {
+        text-align: center;
+    }
+    .conteudo_direito {
+        text-align: center;
+    }
+    .conteudo_parteDeBaixo {
+        display: flex;
+    }
+    .rodape_parteDeCima {
+        display: block;        
+    }
+    .links {
+        margin-top: 35px;
+    }
+    .conteudo_direito_parteDeBaixo {
+        background-image: url('');      
+    }
+   
+    .redessociais ul { 
+        justify-content: left;
+        margin: 25px;
+    }
+    
+    .redessociais li { /* Configuração da borda das logos "redes sociais" */
+        margin-left: 10px; /* Espaço entre as logos das redes sociais */          
+    }
+
+    
+
+
 }
